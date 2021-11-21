@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9FD2FF;
+  transition: ease-in-out 0.7s;
+}
+
+.toggle {
+  display: block;
+  position: relative;
+  background-color: #154876;
+  width: 140px;
+  height: 60px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: ease-in-out 0.7s;
+}
+
+.toggle:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 7px;
+  background-color: #ffffff;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked ~ .toggle {
+  background-color: #9FD2FF;
+}
+
+input[type="checkbox"]:checked ~ .toggle:before {
+  transform: translateX(86px);
+  transition: ease-in-out 0.7s;
+}
+
+input[type="checkbox"]:not(:checked) ~ .toggle:before {
+  transition: ease-in-out 0.7s;
+}
+
+.dark-mode {
+  background-color: #154876;
+  transition: ease-in-out 0.7s;
+}
