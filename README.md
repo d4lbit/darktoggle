@@ -2,4 +2,4 @@
 
 A light/dark mode toggle using CSS and JavaScript.
 
-https://d4lbit.github.io/darktoggle/
+[Click here for a live preview!](https://d4lbit.github.io/darktoggle/)
